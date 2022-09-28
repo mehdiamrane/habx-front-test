@@ -5,6 +5,24 @@ export const projectQuery = gql`
     project {
       id
       name
+      properties {
+        priceRange {
+          min
+          max
+        }
+        surfaceRange {
+          min
+          max
+        }
+        exposures
+        typologies
+      }
     }
+  }
+`
+
+export const mutationSetup = gql`
+  mutation upsertSetup($setup: SetupInput!) {
+    upsertSetup(setup: $setup)
   }
 `

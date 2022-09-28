@@ -6,7 +6,7 @@
     "start": "cross-env BROWSERSLIST_DANGEROUS_EXTEND=1 react-scripts start",
     "build": "cross-env BROWSERSLIST_DANGEROUS_EXTEND=1 react-scripts build",
     "lint": "eslint \"src/**\"",
-    "build:types": "npx apollo codegen:generate --localSchemaFile=src/api/schema.graphql --target=typescript --globalTypesFile=src/globalTypes/index.ts --includes=src/**/*.ts --tagName=gql --addTypename types"
+    "build:types": "apollo codegen:generate --localSchemaFile=src/api/schema.graphql --target=typescript --globalTypesFile=src/globalTypes/index.ts --includes=src/**/*.ts --tagName=gql --addTypename types"
   },
   "husky": {
     "hooks": {
@@ -30,7 +30,8 @@
     "react-dom": "^17.0.2",
     "react-final-form": "^6.5.7",
     "react-scripts": "4.0.3",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "styled-reset": "^4.4.2"
   },
   "devDependencies": {
     "@habx/config-ci-front": "^0.18.0",

@@ -8,11 +8,22 @@
 // ====================================================
 
 export interface project_project {
-  __typename: "Project";
-  id: string | null;
-  name: string | null;
+  id: string | null
+  name: string | null
+  properties?: {
+    exposures?: string[]
+    priceRange: {
+      min: number | null
+      max: number | null
+    }
+    surfaceRange?: {
+      min: number | null
+      max: number | null
+    }
+    typologies?: number[]
+  }
 }
 
 export interface project {
-  project: project_project | null;
+  project: project_project | null
 }
