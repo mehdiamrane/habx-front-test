@@ -159,7 +159,7 @@ I also added a prettier config file `.prettierrc.json` to match the eslint confi
 
 ## Potential improvements
 
-Since I decided to use the packages and tools included in the project, I knew I was going to spend more time getting to know these tools. Because of this, I didn't have time to add tests or animations.
+Since I decided to use the packages and tools included in the project, I knew I was going to spend more time getting to know these tools. Because of this, I didn't have time to add tests or animations. Oh, and it's not responsive...
 
 ## Feedbacks
 
