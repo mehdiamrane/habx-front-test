@@ -63,8 +63,9 @@ const Setup = () => {
 
   const submitForm = useCallback(
     (values: SetupValues) => {
-      upsertSetup({ variables: { setup: { ...values } } })
-      setCurrentStep(5)
+      upsertSetup({ variables: { setup: { ...values } } }).then(() => {
+        setCurrentStep(5)
+      })
     },
     [upsertSetup]
   )
