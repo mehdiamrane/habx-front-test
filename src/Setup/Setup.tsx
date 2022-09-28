@@ -16,7 +16,7 @@ const Setup = () => {
   const projectResponse = useQuery<project>(projectQuery)
   const [upsertSetup] = useMutation(mutationSetup)
 
-  const [currentStep, setCurrentStep] = useState<number>(4)
+  const [currentStep, setCurrentStep] = useState<number>(0)
 
   const steps = useMemo<string[]>(
     () => ['Présentation', 'Budget', 'Surface', 'Pièces', 'Exposition'],
